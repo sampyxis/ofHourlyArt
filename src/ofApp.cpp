@@ -42,12 +42,14 @@ void ofApp::setup(){
 	smCurves = true;
 	smLines = false;
 	showTint = false;
+	frameNum = 0;
 	w = ofGetWidth();
 	h = ofGetHeight();
 	x = ofGetWidth()/2;
 	y = ofGetHeight()/2;
+	saveRate = 1000;
 
-	currImage.loadImage("images/rejiks.jpg");
+	currImage.loadImage("images/doge_loredan.jpg");
 	currImage.resize(ofGetWindowWidth(),ofGetWindowHeight());
 	ofSeedRandom();
 
@@ -72,20 +74,31 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-		//ofBackground(255);
-		//runAgents();
-		//ofSleepMillis(1000);
-		//drawSmallLines();
+	//ofBackground(255);
+    //runAgents();
+	//ofSleepMillis(1000);
+	//drawSmallLines();
+	// Will need to check to save every 20 seconds
+	
+	//frameNum ++;
+	//if (frameNum = saveRate) {
+	//	ofImage myImage;
+	//	currImage.grabScreen(0,0,500,500);
+	//	string frameName;
+	//	frameName = "img_" + ofToString(frameNum) + ".png"; 
+	//	////ofSaveFrame();
+	//	currImage.saveImage(frameName);
+	//	//ofSaveScreen(frameName);
+	//	saveRate = frameNum + 10000;
+	//}
 
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	//currImage.draw(0,0);
 	drawSmallLines();
 	drawLargeLines();
 	drawCurves();
-	
 }
 
 //---------------------------------------------------------------

@@ -43,9 +43,6 @@
     <ClCompile Include="..\..\..\addons\ofxNetwork\src\ofxUDPManager.cpp">
       <Filter>addons\ofxNetwork\src</Filter>
     </ClCompile>
-    <ClCompile Include="HoldingCode.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">

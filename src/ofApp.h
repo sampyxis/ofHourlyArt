@@ -49,6 +49,9 @@ class ofApp : public ofBaseApp{
 		bool smCurves;
 		bool smLines;
 		bool showTint;
+
+		int frameNum;
+		int saveRate;
 		
 		void setup();
 		void update();
@@ -73,7 +76,6 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 		void runAgents();
-		
 };
 
 
